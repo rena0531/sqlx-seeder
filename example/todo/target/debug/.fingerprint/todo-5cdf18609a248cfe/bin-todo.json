@@ -1,0 +1,1 @@
+{"rustc":10368881109578526382,"features":"[]","target":7930270635715148152,"profile":15407205952654432191,"path":1036222786711178230,"deps":[[13557808806522735044,"sqlx_seeder",false,7361878688266028344]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/todo-5cdf18609a248cfe/dep-bin-todo"}}],"rustflags":[],"metadata":7797948686568424061,"config":0,"compile_kind":0}

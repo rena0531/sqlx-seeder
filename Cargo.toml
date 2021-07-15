@@ -1,0 +1,10 @@
+[package]
+name = "sqlx-seeder"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+name = "seed"
+path = "seeds/seed.rs"
+
+[dependencies]
