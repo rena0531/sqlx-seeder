@@ -1,7 +1,7 @@
 use anyhow::{bail, Context};
 use chrono::Utc;
 use console::style;
-use sqlx::seeds::{AppliedSeeds, Seeds, SeedsError, SeedsType, Seeder};
+use crate::seeds::{AppliedSeeds, Seeds, SeedsError, SeedsType, Seeder};
 use sqlx::{AnyConnection, Connection};
 use std::collections::{HashMap, HashSet};
 use std::fs::{self, File};

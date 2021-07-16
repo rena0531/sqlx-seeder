@@ -1,8 +1,27 @@
 [package]
-name = "seeds"
+name = "seeds-cli"
 version = "0.1.0"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dotenv = "0.15"
+tokio = { version = "1.0.1", features = ["macros", "rt", "rt-multi-thread"] }
+futures = "0.3"
+clap = "=3.0.0-beta.2"
+chrono = "0.4"
+anyhow = "1.0"
+url = { version = "2.1.1", default-features = false }
+async-trait = "0.1.30"
+console = "0.14.1"
+dialoguer = "0.8.0"
+serde_json = "1.0.53"
+serde = { version = "1.0.110", features = ["derive"] }
+glob = "0.3.0"
+openssl = { version = "0.10.30", optional = true }
+# workaround for https://github.com/rust-lang/rust/issues/29497
+remove_dir_all = "0.7.0"
+sqlx = {version = "0.5.5", features = ["runtime-tokio-native-tls", "uuid", "mysql", "any"]}
+sqlx-core = { version = "0.5.5", default-features=false, features = ["mysql", "uuid", "bigdecimal"] }
+seeds-core = { version = "0.5.5", path = ".." }
